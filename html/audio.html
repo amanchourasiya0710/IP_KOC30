@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        How to embed sound content in our websites such as music?
+    -->
+
+    <!--
+        audio tag in html
+        Purpose: To embed sound content in a website
+
+        Attributes:
+        controls: It displays the control buttons such as pause/pause, volume, playback speed, etc.
+
+        src: The URL or the path of the audio element which you want to embed.
+
+        autoplay: If this attribute is provided, the audio element starts playing automatically as soon as the page loads.
+
+        muted: If this attribute if present then the audio is muted.
+
+        loop: It will keep playing back to back.
+    -->
+
+    <h1>
+        Audio tag
+    </h1>
+
+    <audio src="/home/captain/IP_KOC30/sample_audio.mp3" controls autoplay muted>
+        Your browser does not support audio elements.
+    </audio>
+
+    <h1>
+        audio element with source tag
+    </h1>
+
+    <!--
+        source tag
+        Purpose: It is used to represent an audio element inside audio tags
+
+        Attributes
+        src: It is used to provide the URL or the path to the audio element
+
+        type: It just specifies the type of the file or the format
+    -->
+    <audio controls autoplay loop>
+        <source src="/home/captain/IP_KOC30/sample_audio.ogg" type="audio/ogg">
+        <source src="/home/captain/IP_KOC30/sample_audio.wav" type="audio/wav">
+        <source src="/home/captain/IP_KOC30/sample_audio.mp3" type="audio/mp3">
+    </audio>
+</body>
+</html>

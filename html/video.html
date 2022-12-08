@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        video tag
+    </h3>
+
+    <!--
+        video tag
+        Purpose: Embed videos in websites
+
+        Attributes:
+        src: URL of the video file to be embedded.
+
+        controls: It displays the play/pause, volume, full screen and other options
+
+        loop: Video keeps playing back to back
+
+        height: Height of the video frame
+
+        width: Width of the video frame
+
+        muted: Mute the audio
+
+        autoplay: Automatically plays the video file
+
+        poster: When the video is paused or downloading then the image that should appear in the video frame is displayed here.
+    -->
+
+    <video src="sample_video.mp4" width="320" height="240" poster = "/home/captain/IP_KOC30/tt.jpeg" controls loop>
+        Video elements are not supported in your browser
+    </video>
+
+    <h3>
+        video element with source tag
+    </h3>
+
+    <!--
+        source tag in video element:
+        The file video file that is supported by the browser will be played.
+
+        attributes:
+
+        src: URL or path of the video
+
+        type: Type of the video
+    -->
+
+    <video width="320" height="240" autoplay loop controls poster="tt.jpeg">
+        <source src="/home/captain/IP_KOC30/sample_video.mp4" type="video/mp4">
+        <source src="/home/captain/IP_KOC30/sample_video.mkv" type="video/mkv">
+        <source src="/home/captain/IP_KOC30/sample_video.ogg" type="video/ogg">
+    </video>
+</body>
+</html>

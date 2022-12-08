@@ -1,0 +1,122 @@
+/* Three ways of providing colors:
+color name, hexadecimal and rgb value */
+
+/* background-color
+It is used to provide background color to text. */
+
+/* text-align
+It is used to align the text within an element */
+
+/* text-align-last
+It is used to align the last line of the text only. */
+
+/* text-align: justify
+All the lines of text are of same width */
+
+/* direction and unicode-bidi can be used to reverse text 
+It sets the right to left property of text
+It overrides the default orientation of unicode characters
+*/
+
+/* vertical-align
+It sets the vertical alignment of images in text
+The default value is baseline
+*/
+/* text-decoration
+It is used to decorate a text 
+
+First specify the position of line
+Then the color
+Then the style of line: dotted, dashed, solid, wavy, etc.
+Lastly width of the line.
+*/
+
+/* letter-spacing
+It is used to set the space between letters. */
+
+/* line-height
+It sets the space between lines */
+
+/* word-spacing
+sets the space between words */
+
+/* white-space
+Using this property, we can avoid the default behavior
+of when the screen ends, the text will not come to a new line */
+
+/* text-shadow
+First value is horizontal spacing
+Second value is vertical spacing
+Third value is the blur value
+Fourth value is the color
+
+More than one shadow can be shown comma separated */
+
+/* font-family
+It is used to set the font-family of the text 
+
+sans-serif
+serif
+'Times New Roman'
+Helvetica
+monospace
+'Courier New'
+
+*/
+
+.family {
+    font-family: 'Roboto Slab', serif;
+}
+
+.shadow {
+    text-shadow: 2px 2px 2px red, 2px 2px 2px blue;
+}
+
+#wrapProperty {
+    white-space: nowrap;
+}
+
+.decorate {
+    letter-spacing: 5px;
+    line-height: 0;
+
+    word-spacing: 12px;
+}
+
+.example {
+    text-decoration: overline blue wavy 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    /* color: red; */
+    /* color: #e34c00; */
+    color: rgb(255, 255, 255);
+
+    background-color: black;
+
+    text-align: left;
+
+    /* text-align-last: right; */
+}
+
+.change {
+    direction: rtl; 
+    unicode-bidi: bidi-override;
+}
+
+/* img.a1 {
+    vertical-align: super;
+} */
+
+/* 
+img.a2 {
+    vertical-align: sub;
+}
+
+img.a3 {
+    vertical-align: text-bottom;
+} */

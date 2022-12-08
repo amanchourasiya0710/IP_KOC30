@@ -1,0 +1,11 @@
+color: It changes the color of text
+background-color: It changes the color of the background
+font-size: Changing the size of the text
+
+color:
+name, hex value, rgb(11, 12, 255)
+
+background-color
+
+text-align
+text-align

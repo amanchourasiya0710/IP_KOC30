@@ -1,0 +1,36 @@
+/* id selection */
+#firstDiv {
+    color: green;
+    background-color: orange;
+    font-size: 20px;
+}
+
+#secondDiv {
+    font-size: 10px;
+}
+
+.info {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+
+.demo {
+    color: green;
+}
+
+p, h1 {
+    text-align: center;
+}
+
+h1 {
+    border: 2px solid blue;
+}
+
+button.btn {
+    padding: 5px;
+}
+
+p.second {
+    font-weight: bold;
+}

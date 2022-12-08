@@ -1,0 +1,7 @@
+h2, h1 {
+    color: red;
+}
+
+.info, .danger {
+    border: 2px dashed blue;
+}
