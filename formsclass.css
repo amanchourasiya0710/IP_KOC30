@@ -1,0 +1,47 @@
+body {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+div {
+  width: 60%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin: auto;
+}
+
+input[type="text"], select {
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 15px 0px;
+    font-size: 30px;
+    background-color: #004953;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: cursive;
+
+    box-shadow: none;
+    transition: box-shadow 0.4s;
+    transition: background-color 0.4s;
+}
+
+input[type="submit"]:hover {
+    background-color: #00693E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}

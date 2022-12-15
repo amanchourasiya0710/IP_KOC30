@@ -1,0 +1,45 @@
+body {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    background-color: green;
+    padding-bottom: 20px;
+
+    padding-left: 18px;
+    padding-top: 15px;
+    color: white;
+}
+
+.topbar {
+    background-color: green;
+    color: white;
+    padding: 20px 0 10px 0;
+
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.topbar-item {
+    border-bottom: 4px solid white;
+    padding: 0px 10px;
+
+    box-shadow: none;
+    transition: box-shadow 0.2s;
+    width: 14%;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.topbar-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topbar > img {
+    width: 50px;
+    position: fixed;
+    left: 37px;
+    top: 90px;
+}

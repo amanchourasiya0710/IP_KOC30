@@ -1,0 +1,43 @@
+body {
+    font-family: monospace;
+    font-size: 24px;
+}
+
+.fixedElement {
+    font-size: 24px;
+    border: 2px solid red;
+    color: red;
+    padding: 5px 15px;
+
+    /* The division is now inline-block. */
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.relativeDivision {
+    width: 800px;
+    height: 400px;
+    background-color: brown;
+    color: white;
+    position: relative;
+    margin: 20px;
+}
+
+.relativeDivision > span {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+#stickyElem {
+    position: sticky;
+    top: 80px;
+    border: 2px solid blue;
+    padding: 10px;
+}
+
+.random {
+    margin-top: 800px;
+    background-color: lightblue;
+}
