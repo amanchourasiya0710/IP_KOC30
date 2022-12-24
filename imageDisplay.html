@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Image Display Changes Tutorial
+    </h1>
+
+    <button onclick="toggleImage()">Show Image</button>
+    <button onclick="toggleImage()">Hide Image</button>
+
+    <br> <br> <br> <br>
+
+    <img id="scenery" src="mountains.jpg" alt="Mountains" width="400px">
+
+    <div>Below Image</div>
+
+    <script>
+        // function hideImage() {
+        //     const imgElement = document.getElementById('scenery');
+        //     imgElement.style.display = "none";
+        // }
+
+        // function showImage() {
+        //     const imgElement = document.getElementById('scenery');
+        //     imgElement.style.display = "block";
+        // }
+
+        function toggleImage() {
+            const imgElement = document.getElementById('scenery');
+            if (imgElement.style.visibility == "hidden") {
+                imgElement.style.visibility = "block";
+            }
+            else {
+                imgElement.style.visibility = "hidden";
+            }
+        }
+    </script>
+</body>
+</html>

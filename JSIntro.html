@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="JSIntro.css">
+    <!-- <script>
+        alert("Message from Alert Box");
+    </script> -->
+</head>
+<body>
+    <div class="tables">
+        <!-- Passing a reference of the element as an argument to the function -->
+        <div onclick="printTable(this)">Table of 2</div>
+        <div onclick="printTable(this)">Table of 3</div>
+        <div onclick="printTable(this)">Table of 4</div>
+    </div>
+
+    <p class="content" id="firstPara">
+        I am a paragraph with class = content and id = firstPara
+    </p>
+
+    <div class="exam" id="secondElement">
+        I am div tag with class = exam and id = college
+    </div>
+
+    <div name = "college" class="hello exam">
+        I am a division having a class hello and name para.
+    </div>
+
+    <p name="college" id="nextPara">I am a paragraph having id = nextPara and name = para</p>
+
+    <p onclick = "myFunction()" class="content">I am a paragraph having class = "content"</p>
+
+    <button onclick="changeCSS()">Click Here to see Magic!</button>
+
+    <script>
+        function myFunction() {
+            let elem = document.getElementById('firstPara');
+            elem.innerHTML = "<img width='200px' src='mountains.jpg' alt='scenery'>"
+        }
+
+        function changeCSS() {
+            let elem = document.getElementById('secondElement');
+
+            elem.style.backgroundColor = "red";
+            elem.style.border = "20px solid purple";
+            elem.style.marginTop="100px";
+        }
+
+        function printTable(elem) {
+            let text = elem.innerText;
+            console.log(text);
+            let length = text.length;
+            console.log(length);
+            let lastCharacter = text[length - 1];
+            console.log(lastCharacter);
+            let number = parseInt(lastCharacter);
+            console.log(number);
+
+            let st = "";
+            for(let i = 1; i <= 10; i += 1) {
+                st = st + "<div>" + number + " * " + i + " = " + number * i + "</div>";
+                console.log(st);
+            }
+
+            elem.innerHTML = st;
+        }
+    </script>
+</body>
+</html>
